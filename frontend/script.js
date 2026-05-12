@@ -5,7 +5,7 @@ const API_URL = '/api';
 let currentSessionId = null;
 
 // DOM elements
-let chatMessages, chatInput, sendButton, totalCourses, courseTitles;
+let chatMessages, chatInput, sendButton, totalCourses, courseTitles, themeToggle;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,14 +15,48 @@ document.addEventListener('DOMContentLoaded', () => {
     sendButton = document.getElementById('sendButton');
     totalCourses = document.getElementById('totalCourses');
     courseTitles = document.getElementById('courseTitles');
-    
+    themeToggle = document.getElementById('themeToggle');
+
+    initTheme();
     setupEventListeners();
     createNewSession();
     loadCourseStats();
 });
 
+// Theme Management
+function initTheme() {
+    // Suppress transitions while applying the saved theme so there's no flash on load
+    document.body.classList.add('no-transition');
+
+    const saved = localStorage.getItem('theme');
+    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const theme = saved || (systemPrefersLight ? 'light' : 'dark');
+
+    document.documentElement.setAttribute('data-theme', theme);
+    syncThemeAriaLabel();
+
+    // Re-enable transitions after the first paint
+    requestAnimationFrame(() => document.body.classList.remove('no-transition'));
+}
+
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    syncThemeAriaLabel();
+}
+
+function syncThemeAriaLabel() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+}
+
 // Event Listeners
 function setupEventListeners() {
+    // Theme toggle
+    themeToggle.addEventListener('click', toggleTheme);
+
     // Chat functionality
     sendButton.addEventListener('click', sendMessage);
     chatInput.addEventListener('keypress', (e) => {
