@@ -19,9 +19,14 @@ dev = [
     "pytest>=9.0",
     "httpx>=0.28",
     "pytest-mock>=3.15",
+    "black>=26.3.1",
 ]
 
 [tool.pytest.ini_options]
 testpaths = ["backend/tests"]
 pythonpath = ["backend"]
 addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
