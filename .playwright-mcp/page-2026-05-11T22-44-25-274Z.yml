@@ -1,0 +1,38 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "+ New Chat" [ref=e6] [cursor=pointer]
+    - group [ref=e8]:
+      - generic "▶ Courses" [ref=e9] [cursor=pointer]
+    - group [ref=e11]:
+      - generic "▶ Try asking:" [ref=e12] [cursor=pointer]
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e18]: Welcome to the Course Materials Assistant! I can help you with questions about courses, lessons and specific content. What would you like to know?
+        - generic [ref=e26]: What is the outline of the MCP course?
+        - generic [ref=e28]:
+          - paragraph [ref=e29]:
+            - strong [ref=e30]: "Course:"
+            - text: "MCP: Build Rich-Context AI Apps with Anthropic"
+          - paragraph [ref=e31]:
+            - strong [ref=e32]: "Link:"
+            - link "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/" [ref=e33] [cursor=pointer]:
+              - /url: https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/
+          - paragraph [ref=e34]:
+            - strong [ref=e35]: "Lessons:"
+          - list [ref=e36]:
+            - listitem [ref=e37]: "Lesson 0: Introduction"
+            - listitem [ref=e38]: "Lesson 1: Why MCP"
+            - listitem [ref=e39]: "Lesson 2: MCP Architecture"
+            - listitem [ref=e40]: "Lesson 3: Chatbot Example"
+            - listitem [ref=e41]: "Lesson 4: Creating An MCP Server"
+            - listitem [ref=e42]: "Lesson 5: Creating An MCP Client"
+            - listitem [ref=e43]: "Lesson 6: Connecting The MCP Chatbot To Reference Servers"
+            - listitem [ref=e44]: "Lesson 7: Adding Prompt And Resource Features"
+            - listitem [ref=e45]: "Lesson 8: Configuring Servers For Claude Desktop"
+            - listitem [ref=e46]: "Lesson 9: Creating And Deploying Remote Servers"
+            - listitem [ref=e47]: "Lesson 10: Conclusion"
+      - generic [ref=e19]:
+        - textbox "Ask about courses, lessons, or specific content..." [active] [ref=e20]
+        - button [ref=e21] [cursor=pointer]:
+          - img [ref=e22]

@@ -1,0 +1,66 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "+ New Chat" [ref=e6] [cursor=pointer]
+    - group [ref=e8]:
+      - generic "▶ Courses" [ref=e9] [cursor=pointer]
+    - group [ref=e11]:
+      - generic "▶ Try asking:" [ref=e12] [cursor=pointer]
+      - generic [ref=e25]:
+        - button "Outline of a course" [ref=e26] [cursor=pointer]
+        - button "Courses about Chatbot" [ref=e27] [cursor=pointer]
+        - button "Courses explaining RAG" [ref=e28] [cursor=pointer]
+        - button "Details of a course's lesson" [ref=e29] [cursor=pointer]
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e18]: Welcome to the Course Materials Assistant! I can help you with questions about courses, lessons and specific content. What would you like to know?
+        - generic [ref=e31]: "What is the outline of the \"MCP: Build Rich-Context AI Apps with Anthropic\" course?"
+        - generic [ref=e33]:
+          - paragraph [ref=e34]:
+            - strong [ref=e35]: "Course:"
+            - text: "MCP: Build Rich-Context AI Apps with Anthropic"
+          - paragraph [ref=e36]:
+            - strong [ref=e37]: "Link:"
+            - link "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/" [ref=e38] [cursor=pointer]:
+              - /url: https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/
+          - paragraph [ref=e39]:
+            - strong [ref=e40]: "Lessons:"
+          - list [ref=e41]:
+            - listitem [ref=e42]: "Lesson 0: Introduction"
+            - listitem [ref=e43]: "Lesson 1: Why MCP"
+            - listitem [ref=e44]: "Lesson 2: MCP Architecture"
+            - listitem [ref=e45]: "Lesson 3: Chatbot Example"
+            - listitem [ref=e46]: "Lesson 4: Creating An MCP Server"
+            - listitem [ref=e47]: "Lesson 5: Creating An MCP Client"
+            - listitem [ref=e48]: "Lesson 6: Connecting The MCP Chatbot To Reference Servers"
+            - listitem [ref=e49]: "Lesson 7: Adding Prompt And Resource Features"
+            - listitem [ref=e50]: "Lesson 8: Configuring Servers For Claude Desktop"
+            - listitem [ref=e51]: "Lesson 9: Creating And Deploying Remote Servers"
+            - listitem [ref=e52]: "Lesson 10: Conclusion"
+        - generic [ref=e54]: What is the outline of the MCP course?
+        - generic [ref=e56]:
+          - paragraph [ref=e57]:
+            - strong [ref=e58]: "Course:"
+            - text: "MCP: Build Rich-Context AI Apps with Anthropic"
+          - paragraph [ref=e59]:
+            - strong [ref=e60]: "Link:"
+            - link "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/" [ref=e61] [cursor=pointer]:
+              - /url: https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/
+          - paragraph [ref=e62]:
+            - strong [ref=e63]: "Lessons:"
+          - list [ref=e64]:
+            - listitem [ref=e65]: "Lesson 0: Introduction"
+            - listitem [ref=e66]: "Lesson 1: Why MCP"
+            - listitem [ref=e67]: "Lesson 2: MCP Architecture"
+            - listitem [ref=e68]: "Lesson 3: Chatbot Example"
+            - listitem [ref=e69]: "Lesson 4: Creating An MCP Server"
+            - listitem [ref=e70]: "Lesson 5: Creating An MCP Client"
+            - listitem [ref=e71]: "Lesson 6: Connecting The MCP Chatbot To Reference Servers"
+            - listitem [ref=e72]: "Lesson 7: Adding Prompt And Resource Features"
+            - listitem [ref=e73]: "Lesson 8: Configuring Servers For Claude Desktop"
+            - listitem [ref=e74]: "Lesson 9: Creating And Deploying Remote Servers"
+            - listitem [ref=e75]: "Lesson 10: Conclusion"
+      - generic [ref=e19]:
+        - textbox "Ask about courses, lessons, or specific content..." [active] [ref=e20]
+        - button [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
